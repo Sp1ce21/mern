@@ -7,7 +7,7 @@ import dotenv from "dotenv";
 import postRoutes from "../server/routes/posts.js";
 
 const app = express();
-dotenv.config();
+dotenv.config({ path: "./vars/.env" });
 
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
