@@ -15,6 +15,7 @@ import moment from "moment";
 
 const Post: FC<any> = ({ post }) => {
   const classes = useStyles();
+
   return (
     <Card className={classes.card}>
       <CardMedia
@@ -50,7 +51,7 @@ const Post: FC<any> = ({ post }) => {
       <CardActions className={classes.cardActions}>
         <Button size="small" color="primary" onClick={() => {}}>
           <ThumbUpAltIcon fontSize="small" />
-          Like  
+          Like
           {post.likeCount}
         </Button>
         <Button size="small" color="primary" onClick={() => {}}>
